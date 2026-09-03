@@ -16,8 +16,8 @@ CHECKSUM_FILE = REPOSITORY_ROOT / "data" / "SHA256SUMS"
 DEFAULT_SOURCE_DIR = REPOSITORY_ROOT / "data" / "source"
 DEFAULT_OUTPUT_DIR = REPOSITORY_ROOT / "data" / "source_uncompressed"
 BASE_URL = (
-    "https://anonymous.4open.science/r/anonymous-review-artifact-2026-A03A/"
-    "data/source"
+    "https://anonymous.4open.science/api/repo/"
+    "anonymous-review-artifact-2026-A03A/file/data/source"
 )
 
 
@@ -46,7 +46,7 @@ def download(source_dir: Path, expected: list[tuple[str, str]]) -> None:
         destination = source_dir / filename
         if destination.exists():
             continue
-        url = f"{BASE_URL}/{filename}"
+        url = f"{BASE_URL}/{filename}?download=true"
         partial = destination.with_suffix(destination.suffix + ".part")
         print(f"Downloading {filename}")
         urllib.request.urlretrieve(url, partial)
