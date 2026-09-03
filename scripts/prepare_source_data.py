@@ -40,17 +40,68 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def progress_hook(filename: str):
+    last_report = -1
+
+    def report(block_count: int, block_size: int, total_size: int) -> None:
+        nonlocal last_report
+        downloaded = block_count * block_size
+        report_number = downloaded // (64 * 1024 * 1024)
+        if (
+            report_number == last_report
+            and (total_size <= 0 or downloaded < total_size)
+        ):
+            return
+        last_report = report_number
+        downloaded_mib = downloaded / (1024 * 1024)
+        if total_size > 0:
+            total_mib = total_size / (1024 * 1024)
+            print(
+                f"  {filename}: {downloaded_mib:.0f}/{total_mib:.0f} MiB",
+                end="\r",
+                flush=True,
+            )
+        else:
+            print(
+                f"  {filename}: {downloaded_mib:.0f} MiB",
+                end="\r",
+                flush=True,
+            )
+
+    return report
+
+
 def download(source_dir: Path, expected: list[tuple[str, str]]) -> None:
     source_dir.mkdir(parents=True, exist_ok=True)
-    for _, filename in expected:
+    for expected_digest, filename in expected:
         destination = source_dir / filename
-        if destination.exists():
+        if destination.exists() and sha256(destination) == expected_digest:
+            print(f"Already downloaded and verified {filename}")
             continue
+        if destination.exists():
+            print(f"Replacing Git LFS pointer or incomplete file: {filename}")
         url = f"{BASE_URL}/{filename}?download=true"
         partial = destination.with_suffix(destination.suffix + ".part")
         print(f"Downloading {filename}")
-        urllib.request.urlretrieve(url, partial)
-        partial.replace(destination)
+        partial.unlink(missing_ok=True)
+        try:
+            urllib.request.urlretrieve(
+                url,
+                partial,
+                reporthook=progress_hook(filename),
+            )
+            print()
+            actual_digest = sha256(partial)
+            if actual_digest != expected_digest:
+                raise ValueError(
+                    f"SHA-256 mismatch for downloaded {filename}: "
+                    f"expected {expected_digest}, found {actual_digest}"
+                )
+            partial.replace(destination)
+            print(f"Downloaded and verified {filename}")
+        except Exception:
+            partial.unlink(missing_ok=True)
+            raise
 
 
 def verify(source_dir: Path, expected: list[tuple[str, str]]) -> None:

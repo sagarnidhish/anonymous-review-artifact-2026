@@ -1,0 +1,3 @@
+# Lightweight environment for inspecting the decompressed source HDF5 files.
+numpy==1.26.4
+h5py==3.10.0
