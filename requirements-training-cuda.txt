@@ -1,0 +1,7 @@
+# Matched-suite and identity-holdout GPU environment used on CSD3.
+# CUDA 12.1 wheel index is needed for the pinned PyTorch build.
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+numpy==1.26.4
+h5py==3.10.0
+torch==2.4.1+cu121

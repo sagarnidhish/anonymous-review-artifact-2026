@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "source_commit": "545a70e308d6de1a2c73719dd862dd43bfb3bb42",
+  "walrus_checkpoint_sha256": "7c5338a8ca88cdc36f8479dc4fe136416fed0d0b82521380998d2a14c8a01c3f",
+  "seed": 1337,
+  "tiny_gate_passed": true,
+  "validation_improved": true,
+  "baseline_validation": {
+    "particle_rows": [
+      {
+        "stem": "GRA29_C20_25deg_particle1",
+        "count": 8,
+        "model_mae": 0.013899644021876156,
+        "naive_mae": 0.010388069204054773,
+        "mae_ratio": 1.3380392206523528
+      },
+      {
+        "stem": "GRA29_C20_25deg_particle2",
+        "count": 8,
+        "model_mae": 0.015156233916059136,
+        "naive_mae": 0.012099393759854138,
+        "mae_ratio": 1.2526440759658235
+      },
+      {
+        "stem": "GRA29_C20_25deg_particle3",
+        "count": 8,
+        "model_mae": 0.016406728886067867,
+        "naive_mae": 0.013250072835944593,
+        "mae_ratio": 1.2382368828615
+      },
+      {
+        "stem": "GRA29_C20_25deg_particle4",
+        "count": 8,
+        "model_mae": 0.016276186797767878,
+        "naive_mae": 0.014047667966224253,
+        "mae_ratio": 1.1586397711635696
+      }
+    ],
+    "mean_model_mae": 0.01543469840544276,
+    "mean_naive_mae": 0.01244630094151944,
+    "mean_particle_mae_ratio": 1.2468899876608115
+  },
+  "fitted_validation": {
+    "particle_rows": [
+      {
+        "stem": "GRA29_C20_25deg_particle1",
+        "count": 8,
+        "model_mae": 0.012752417474985123,
+        "naive_mae": 0.010388069204054773,
+        "mae_ratio": 1.2276022833971374
+      },
+      {
+        "stem": "GRA29_C20_25deg_particle2",
+        "count": 8,
+        "model_mae": 0.014344766619615257,
+        "naive_mae": 0.012099393759854138,
+        "mae_ratio": 1.185577302824153
+      },
+      {
+        "stem": "GRA29_C20_25deg_particle3",
+        "count": 8,
+        "model_mae": 0.014692408381961286,
+        "naive_mae": 0.013250072835944593,
+        "mae_ratio": 1.1088549145257487
+      },
+      {
+        "stem": "GRA29_C20_25deg_particle4",
+        "count": 8,
+        "model_mae": 0.01761203841306269,
+        "naive_mae": 0.014047667966224253,
+        "mae_ratio": 1.2537339617798835
+      }
+    ],
+    "mean_model_mae": 0.01485040772240609,
+    "mean_naive_mae": 0.01244630094151944,
+    "mean_particle_mae_ratio": 1.1939421156317307
+  },
+  "baseline_test": {
+    "particle_rows": [
+      {
+        "stem": "GRA29_C20_45deg_particle1",
+        "count": 16,
+        "model_mae": 0.015061284706462175,
+        "naive_mae": 0.011710087826941162,
+        "mae_ratio": 1.2861803369066953
+      },
+      {
+        "stem": "GRA29_C20_45deg_particle2",
+        "count": 16,
+        "model_mae": 0.01619988156016916,
+        "naive_mae": 0.012669949588598683,
+        "mae_ratio": 1.2786066311382138
+      },
+      {
+        "stem": "GRA29_C20_45deg_particle3",
+        "count": 16,
+        "model_mae": 0.01822746073594317,
+        "naive_mae": 0.015468095371033996,
+        "mae_ratio": 1.1783907649080338
+      },
+      {
+        "stem": "GRA29_C20_45deg_particle4",
+        "count": 16,
+        "model_mae": 0.02199707122053951,
+        "naive_mae": 0.019731633481569588,
+        "mae_ratio": 1.1148124782008526
+      }
+    ],
+    "mean_model_mae": 0.017871424555778503,
+    "mean_naive_mae": 0.014894941567035858,
+    "mean_particle_mae_ratio": 1.214497552788449
+  },
+  "fitted_test": {
+    "particle_rows": [
+      {
+        "stem": "GRA29_C20_45deg_particle1",
+        "count": 16,
+        "model_mae": 0.015279708954039961,
+        "naive_mae": 0.011710087826941162,
+        "mae_ratio": 1.3048329935567387
+      },
+      {
+        "stem": "GRA29_C20_45deg_particle2",
+        "count": 16,
+        "model_mae": 0.01596474851248786,
+        "naive_mae": 0.012669949588598683,
+        "mae_ratio": 1.2600483057054992
+      },
+      {
+        "stem": "GRA29_C20_45deg_particle3",
+        "count": 16,
+        "model_mae": 0.017708858009427786,
+        "naive_mae": 0.015468095371033996,
+        "mae_ratio": 1.1448635132280027
+      },
+      {
+        "stem": "GRA29_C20_45deg_particle4",
+        "count": 16,
+        "model_mae": 0.023062656458932906,
+        "naive_mae": 0.019731633481569588,
+        "mae_ratio": 1.168816382104131
+      }
+    ],
+    "mean_model_mae": 0.018003992983722128,
+    "mean_naive_mae": 0.014894941567035858,
+    "mean_particle_mae_ratio": 1.219640298648593
+  },
+  "steps_completed": 64,
+  "projection_checkpoint": "intensity_projection_probe.pt",
+  "pretrained_projection_hashes_unchanged": true,
+  "elapsed_seconds": 2934.2501571178436
+}

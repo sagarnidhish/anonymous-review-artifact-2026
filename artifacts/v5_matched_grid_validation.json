@@ -1,0 +1,200 @@
+{
+  "status": "complete",
+  "payload_count": 24,
+  "particle_rollout_count": 96,
+  "diverged_particle_count": 5,
+  "payloads": [
+    {
+      "status": "complete",
+      "payload_id": 0,
+      "tag": "fresh_unet_image_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 1,
+      "tag": "fresh_unet_image_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 2,
+      "tag": "fresh_unet_protocol_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 3,
+      "tag": "fresh_unet_protocol_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 4,
+      "tag": "fresh_convlstm_image_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 5,
+      "tag": "fresh_convlstm_image_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 6,
+      "tag": "fresh_convlstm_protocol_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 7,
+      "tag": "fresh_convlstm_protocol_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 8,
+      "tag": "fresh_simvp_image_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 9,
+      "tag": "fresh_simvp_image_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 10,
+      "tag": "fresh_simvp_protocol_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 11,
+      "tag": "fresh_simvp_protocol_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 2
+    },
+    {
+      "status": "complete",
+      "payload_id": 12,
+      "tag": "fresh_residual_cnn_image_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 13,
+      "tag": "fresh_residual_cnn_image_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 3
+    },
+    {
+      "status": "complete",
+      "payload_id": 14,
+      "tag": "fresh_residual_cnn_protocol_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 15,
+      "tag": "fresh_residual_cnn_protocol_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 16,
+      "tag": "fresh_predrnn_image_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 17,
+      "tag": "fresh_predrnn_image_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 18,
+      "tag": "fresh_predrnn_protocol_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 19,
+      "tag": "fresh_predrnn_protocol_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 20,
+      "tag": "fresh_predrnnpp_image_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 21,
+      "tag": "fresh_predrnnpp_image_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 22,
+      "tag": "fresh_predrnnpp_protocol_delta_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    },
+    {
+      "status": "complete",
+      "payload_id": 23,
+      "tag": "fresh_predrnnpp_protocol_direct_s1337",
+      "next_frame_particle_count": 4,
+      "rollout_particle_count": 4,
+      "diverged_particle_count": 0
+    }
+  ]
+}

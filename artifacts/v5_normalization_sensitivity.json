@@ -1,0 +1,1674 @@
+{
+  "description": "Paired-training-statistics normalization sensitivity",
+  "source_commit": "114fd346f0a09b0d6e424bc1159cbd9dfaf00345",
+  "same_particle_identity_assumption": true,
+  "test_information_boundary": "Final 45 C scaling uses only the paired 25 C training movie mean and standard deviation. Stored 45 C statistics are used only to invert the archived float16 standardization back to approximate raw intensity.",
+  "payload_results": [
+    {
+      "payload": {
+        "payload_id": 0,
+        "model_family": "unet",
+        "input_mode": "image_only",
+        "target_mode": "delta",
+        "tag": "fresh_unet_image_delta_s1337",
+        "seed": 1337,
+        "context_len": 4,
+        "rollout_steps": 512,
+        "report_horizons": [
+          32,
+          128,
+          256,
+          512
+        ],
+        "anchor_rule": "first_current_sign_change_minus_context"
+      },
+      "checkpoint": "/workspace/gra29_v5/results/v5_matched_grid/fresh_unet_image_delta_s1337/models/unet_best.pt",
+      "archived_reproduction": {
+        "next_frame_rtol": 1e-05,
+        "rollout_rtol": 0.01,
+        "strict_atol": 1e-05,
+        "divergent_ratio_threshold": 1000.0,
+        "divergent_log10_tolerance": 0.05,
+        "next_frame_summary": {
+          "all_reproduced": true,
+          "comparison_count": 4,
+          "strict_count": 4,
+          "divergent_order_count": 0,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_difference": 1.826873498145254e-06,
+          "max_relative_difference": 2.1659663499956676e-06,
+          "max_log10_difference_for_divergent_pairs": null
+        },
+        "rollout_summary": {
+          "all_reproduced": true,
+          "comparison_count": 16,
+          "strict_count": 16,
+          "divergent_order_count": 0,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_difference": 5778436939025.75,
+          "max_relative_difference": 0.00911260043765428,
+          "max_log10_difference_for_divergent_pairs": 0.0039396290915334475
+        },
+        "next_frame_comparisons": [
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 4.32687685458788e-07,
+            "relative_difference": 5.23731807040728e-07,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 2.885415602005281e-07,
+            "relative_difference": 3.558138289642638e-07,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 1.826873498145254e-06,
+            "relative_difference": 2.1659663499956676e-06,
+            "log10_difference": null
+          }
+        ],
+        "rollout_comparisons": [
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 1.1836311320401194e-05,
+            "relative_difference": 6.62267487577318e-06,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 7.790206137325839e-05,
+            "relative_difference": 1.5800115769771663e-05,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0001149135486491204,
+            "relative_difference": 1.5071941115323574e-05,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 2384.626040220028,
+            "relative_difference": 0.004522100765237893,
+            "log10_difference": 0.001959496220954371
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 1.0961488852601065e-05,
+            "relative_difference": 8.48511380264727e-06,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 5.774797616719951e-05,
+            "relative_difference": 1.3902713597815948e-05,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 9.071181070829937e-05,
+            "relative_difference": 1.4093548815198142e-05,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.00026190357006328213,
+            "relative_difference": 3.051190111791185e-05,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 3.613524518941702e-06,
+            "relative_difference": 3.1349817328954924e-06,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 8.760928055906447e-06,
+            "relative_difference": 2.7545137074364396e-06,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 1.596674446435742e-05,
+            "relative_difference": 3.334660528166832e-06,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 4.490333723738971e-06,
+            "relative_difference": 2.493854659417537e-06,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 5.639250684574826e-05,
+            "relative_difference": 3.6396583367597354e-05,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.4689470588024278,
+            "relative_difference": 0.0013467362933298282,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 25435.391309994273,
+            "relative_difference": 0.004527243373017643,
+            "log10_difference": 0.001961719567222353
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 5778436939025.75,
+            "relative_difference": 0.00911260043765428,
+            "log10_difference": 0.0039396290915334475
+          }
+        ]
+      },
+      "modes": {
+        "archived_test_record": {
+          "next_frame": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "N": 3000,
+                "model_mae": 0.00829471554607153,
+                "naive_mae": 0.010227324441075325,
+                "mae_ratio": 0.8110347524283099,
+                "model_mse": 0.00040781626012176275,
+                "naive_mse": 0.0004591176984831691,
+                "mse_ratio": 0.8882608130096143,
+                "model_rmse": 0.020194461124817438,
+                "naive_rmse": 0.021427031956926957,
+                "rmse_ratio": 0.9424758951875716,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.009251187555491924,
+                  "naive_mae": 0.011094273068010807,
+                  "mae_ratio": 0.8338705473337203,
+                  "model_rmse": 0.013413013712185493,
+                  "naive_rmse": 0.015470058311028313,
+                  "rmse_ratio": 0.8670305853096629
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.008291197009384632,
+                  "naive_mae": 0.010224134661257267,
+                  "mae_ratio": 0.8109436430647579,
+                  "model_rmse": 0.020215216405170263,
+                  "naive_rmse": 0.021445898259089605,
+                  "rmse_ratio": 0.9426145811636623
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "N": 3000,
+                "model_mae": 0.008891221135854721,
+                "naive_mae": 0.010762064717710018,
+                "mae_ratio": 0.8261631358918848,
+                "model_mse": 0.0008255071588791907,
+                "naive_mse": 0.0007941486546769738,
+                "mse_ratio": 1.0394869449410227,
+                "model_rmse": 0.028731640379191556,
+                "naive_rmse": 0.02818064326229928,
+                "rmse_ratio": 1.019552325749406,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.009771216660737991,
+                  "naive_mae": 0.011921069584786892,
+                  "mae_ratio": 0.8196593930805972,
+                  "model_rmse": 0.013617588196365799,
+                  "naive_rmse": 0.01640675794433885,
+                  "rmse_ratio": 0.8299987262909883
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.008887982927262783,
+                  "naive_mae": 0.010757800191640854,
+                  "mae_ratio": 0.8261896269619343,
+                  "model_rmse": 0.02877260441302973,
+                  "naive_rmse": 0.028214899732990222,
+                  "rmse_ratio": 1.0197663179850827
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "N": 3000,
+                "model_mae": 0.010469770058989525,
+                "naive_mae": 0.012910758145153522,
+                "mae_ratio": 0.8109337919028169,
+                "model_mse": 0.0014462885446846485,
+                "naive_mse": 0.0013965985272079706,
+                "mse_ratio": 1.0355793139607674,
+                "model_rmse": 0.038030100508474184,
+                "naive_rmse": 0.03737109213293038,
+                "rmse_ratio": 1.0176341749178668,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.010753006674349308,
+                  "naive_mae": 0.013326705433428288,
+                  "mae_ratio": 0.8068765928731947,
+                  "model_rmse": 0.015179280558972011,
+                  "naive_rmse": 0.018422871027758497,
+                  "rmse_ratio": 0.8239367542714034
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.01046872790902853,
+                  "naive_mae": 0.01290922798216343,
+                  "mae_ratio": 0.8109491848384026,
+                  "model_rmse": 0.03808888552333489,
+                  "naive_rmse": 0.037423109534930776,
+                  "rmse_ratio": 1.0177905042279471
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "N": 3000,
+                "model_mae": 0.012469451874494553,
+                "naive_mae": 0.014783921651542187,
+                "mae_ratio": 0.8434468315241511,
+                "model_mse": 0.0016938654007390141,
+                "naive_mse": 0.0016185409622266889,
+                "mse_ratio": 1.0465384814287917,
+                "model_rmse": 0.04115659607813812,
+                "naive_rmse": 0.04023109446965977,
+                "rmse_ratio": 1.023004634118923,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.01485587377101183,
+                  "naive_mae": 0.01583205536007881,
+                  "mae_ratio": 0.9383414492392147,
+                  "model_rmse": 0.02317877863280828,
+                  "naive_rmse": 0.021758564386226083,
+                  "rmse_ratio": 1.0652715051127748
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.012460669502615929,
+                  "naive_mae": 0.014780061319470406,
+                  "mae_ratio": 0.843072923263245,
+                  "model_rmse": 0.04120827317099869,
+                  "naive_rmse": 0.04028343576306301,
+                  "rmse_ratio": 1.0229582554322165
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": 0.8228946279367907
+          },
+          "rollout_anchored": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.023062873631715775,
+                    "naive_mae": 0.012904096394777298,
+                    "mae_ratio": 1.7872521194936253
+                  },
+                  "128": {
+                    "model_mae": 0.0712055191397667,
+                    "naive_mae": 0.01444169320166111,
+                    "mae_ratio": 4.93055198898537
+                  },
+                  "256": {
+                    "model_mae": 0.14138180017471313,
+                    "naive_mae": 0.01854320988059044,
+                    "mae_ratio": 7.624451272737866
+                  },
+                  "512": {
+                    "model_mae": 19306.322265625,
+                    "naive_mae": 0.03644685074687004,
+                    "mae_ratio": 529711.6724764752
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.025903042405843735,
+                    "naive_mae": 0.020051302388310432,
+                    "mae_ratio": 1.2918384005292727
+                  },
+                  "128": {
+                    "model_mae": 0.08092103898525238,
+                    "naive_mae": 0.019481854513287544,
+                    "mae_ratio": 4.153662010465196
+                  },
+                  "256": {
+                    "model_mae": 0.15753602981567383,
+                    "naive_mae": 0.02447611838579178,
+                    "mae_ratio": 6.436315895053132
+                  },
+                  "512": {
+                    "model_mae": 0.30278146266937256,
+                    "naive_mae": 0.03527527302503586,
+                    "mae_ratio": 8.583391047164397
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.0190126970410347,
+                    "naive_mae": 0.016494877636432648,
+                    "mae_ratio": 1.1526425027270817
+                  },
+                  "128": {
+                    "model_mae": 0.05544952675700188,
+                    "naive_mae": 0.01743387244641781,
+                    "mae_ratio": 3.18056283407048
+                  },
+                  "256": {
+                    "model_mae": 0.11171385645866394,
+                    "naive_mae": 0.02333155833184719,
+                    "mae_ratio": 4.78810094335518
+                  },
+                  "512": {
+                    "model_mae": 0.18523018062114716,
+                    "naive_mae": 0.10287342220544815,
+                    "mae_ratio": 1.8005640004006536
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.03848603367805481,
+                    "naive_mae": 0.02483856864273548,
+                    "mae_ratio": 1.5494465172940146
+                  },
+                  "128": {
+                    "model_mae": 10.508020401000977,
+                    "naive_mae": 0.03013666346669197,
+                    "mae_ratio": 348.6789575300791
+                  },
+                  "256": {
+                    "model_mae": 223417.359375,
+                    "naive_mae": 0.03958681970834732,
+                    "mae_ratio": 5643730.944314528
+                  },
+                  "512": {
+                    "model_mae": 53201730535424.0,
+                    "naive_mae": 0.08314154297113419,
+                    "mae_ratio": 639893471232486.6
+                  }
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": {
+              "32": 1.4452948850109986,
+              "128": 90.23593359090005,
+              "256": 1410937.4482956599,
+              "512": 159973367940552.16
+            }
+          },
+          "normalization_statistics": {
+            "GRA29_C20_45deg_particle1": {
+              "particle": 1,
+              "test_record_mu": 10524.1103515625,
+              "test_record_std": 8806.4736328125,
+              "paired_25deg_training_mu": 10308.583984375,
+              "paired_25deg_training_std": 8579.6923828125
+            },
+            "GRA29_C20_45deg_particle2": {
+              "particle": 2,
+              "test_record_mu": 9801.4755859375,
+              "test_record_std": 8395.2353515625,
+              "paired_25deg_training_mu": 8159.33984375,
+              "paired_25deg_training_std": 7649.083984375
+            },
+            "GRA29_C20_45deg_particle3": {
+              "particle": 3,
+              "test_record_mu": 8029.84375,
+              "test_record_std": 6557.9931640625,
+              "paired_25deg_training_mu": 7850.4208984375,
+              "paired_25deg_training_std": 6440.0224609375
+            },
+            "GRA29_C20_45deg_particle4": {
+              "particle": 4,
+              "test_record_mu": 7886.98193359375,
+              "test_record_std": 6037.22314453125,
+              "paired_25deg_training_mu": 8316.0869140625,
+              "paired_25deg_training_std": 6331.30029296875
+            }
+          }
+        },
+        "paired_training_reference": {
+          "next_frame": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "N": 3000,
+                "model_mae": 0.00850929506123066,
+                "naive_mae": 0.010497660376131535,
+                "mae_ratio": 0.8105896701114651,
+                "model_mse": 0.00042935542296618223,
+                "naive_mse": 0.00048370930016972125,
+                "mse_ratio": 0.887631109874324,
+                "model_rmse": 0.020720893392085733,
+                "naive_rmse": 0.021993392193332097,
+                "rmse_ratio": 0.9421417673972022,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.009496652521193027,
+                  "naive_mae": 0.011387521401047707,
+                  "mae_ratio": 0.8339525509316971,
+                  "model_rmse": 0.013773619394932372,
+                  "naive_rmse": 0.015878967763633806,
+                  "rmse_ratio": 0.8674127688877153
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.008505661971867085,
+                  "naive_mae": 0.010494384914636612,
+                  "mae_ratio": 0.8104964741672628,
+                  "model_rmse": 0.02074216233021166,
+                  "naive_rmse": 0.022012758085554734,
+                  "rmse_ratio": 0.9422791205715896
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "N": 3000,
+                "model_mae": 0.009680011309683323,
+                "naive_mae": 0.01181186642497778,
+                "mae_ratio": 0.8195158124387216,
+                "model_mse": 0.0009814542718231678,
+                "naive_mse": 0.0009566404623910785,
+                "mse_ratio": 1.0259384903812958,
+                "model_rmse": 0.03132817057894009,
+                "naive_rmse": 0.030929604950452865,
+                "rmse_ratio": 1.0128862178849585,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.01068278681486845,
+                  "naive_mae": 0.013083945959806442,
+                  "mae_ratio": 0.8164805057805731,
+                  "model_rmse": 0.014892899107209904,
+                  "naive_rmse": 0.01800720076235621,
+                  "rmse_ratio": 0.8270524277345367
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.009676322340965271,
+                  "naive_mae": 0.011807181872427464,
+                  "mae_ratio": 0.8195285247161095,
+                  "model_rmse": 0.031372758657421916,
+                  "naive_rmse": 0.030967204899657663,
+                  "rmse_ratio": 1.0130962338731688
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "N": 3000,
+                "model_mae": 0.010660813190042973,
+                "naive_mae": 0.013147224672138691,
+                "mae_ratio": 0.8108793647251753,
+                "model_mse": 0.0014980296837165952,
+                "naive_mse": 0.0014482334954664111,
+                "mse_ratio": 1.034384088205436,
+                "model_rmse": 0.03870438842969354,
+                "naive_rmse": 0.03805566311952022,
+                "rmse_ratio": 1.017046748289102,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.010947208851575851,
+                  "naive_mae": 0.013570829294621944,
+                  "mae_ratio": 0.806672062105606,
+                  "model_rmse": 0.015451348750345298,
+                  "naive_rmse": 0.018760345288435346,
+                  "rmse_ratio": 0.8236175034512904
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.010659758932888508,
+                  "naive_mae": 0.01314566470682621,
+                  "mae_ratio": 0.8108953917981162,
+                  "model_rmse": 0.038764212589430025,
+                  "naive_rmse": 0.038108630938791306,
+                  "rmse_ratio": 1.0172029704161163
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "N": 3000,
+                "model_mae": 0.011783353053033352,
+                "naive_mae": 0.014097252860665321,
+                "mae_ratio": 0.8358616511669236,
+                "model_mse": 0.001521209254860878,
+                "naive_mse": 0.001471676048822701,
+                "mse_ratio": 1.0336576830735285,
+                "model_rmse": 0.039002682662361544,
+                "naive_rmse": 0.038362430173578696,
+                "rmse_ratio": 1.0166895706524819,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.013858026824891567,
+                  "naive_mae": 0.015096687711775303,
+                  "mae_ratio": 0.9179514797860202,
+                  "model_rmse": 0.02045961375622689,
+                  "naive_rmse": 0.020747917848828814,
+                  "rmse_ratio": 0.9861044325169142
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.011775716207921505,
+                  "naive_mae": 0.014093573205173016,
+                  "mae_ratio": 0.8355380169735276,
+                  "model_rmse": 0.03905466865476904,
+                  "naive_rmse": 0.03841233841782237,
+                  "rmse_ratio": 1.016721976932512
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": 0.8192116246105714
+          },
+          "rollout_anchored": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.023606443777680397,
+                    "naive_mae": 0.013245181180536747,
+                    "mae_ratio": 1.7822665810241314
+                  },
+                  "128": {
+                    "model_mae": 0.07259535044431686,
+                    "naive_mae": 0.01482341531664133,
+                    "mae_ratio": 4.897343081443489
+                  },
+                  "256": {
+                    "model_mae": 0.14399345219135284,
+                    "naive_mae": 0.019033346325159073,
+                    "mae_ratio": 7.565325073763633
+                  },
+                  "512": {
+                    "model_mae": 14284.9697265625,
+                    "naive_mae": 0.037410229444503784,
+                    "mae_ratio": 381846.6215972704
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.026480969041585922,
+                    "naive_mae": 0.02200726605951786,
+                    "mae_ratio": 1.203282996169042
+                  },
+                  "128": {
+                    "model_mae": 0.08068481087684631,
+                    "naive_mae": 0.021382272243499756,
+                    "mae_ratio": 3.773444185819616
+                  },
+                  "256": {
+                    "model_mae": 0.15912438929080963,
+                    "naive_mae": 0.0268637053668499,
+                    "mae_ratio": 5.923396907381616
+                  },
+                  "512": {
+                    "model_mae": 0.3041244447231293,
+                    "naive_mae": 0.038716305047273636,
+                    "mae_ratio": 7.855203236770277
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.019141174852848053,
+                    "naive_mae": 0.016797039657831192,
+                    "mae_ratio": 1.1395564482056795
+                  },
+                  "128": {
+                    "model_mae": 0.05534777045249939,
+                    "naive_mae": 0.01775323785841465,
+                    "mae_ratio": 3.117615552380252
+                  },
+                  "256": {
+                    "model_mae": 0.111469566822052,
+                    "naive_mae": 0.02375895529985428,
+                    "mae_ratio": 4.691686373210849
+                  },
+                  "512": {
+                    "model_mae": 0.18628662824630737,
+                    "naive_mae": 0.1047578677535057,
+                    "mae_ratio": 1.778259067706858
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.03182896971702576,
+                    "naive_mae": 0.023684868589043617,
+                    "mae_ratio": 1.3438524937288239
+                  },
+                  "128": {
+                    "model_mae": 1.3058216571807861,
+                    "naive_mae": 0.028736859560012817,
+                    "mae_ratio": 45.44065277744649
+                  },
+                  "256": {
+                    "model_mae": 33454.609375,
+                    "naive_mae": 0.03774811327457428,
+                    "mae_ratio": 886259.1126516984
+                  },
+                  "512": {
+                    "model_mae": 8038278234112.0,
+                    "naive_mae": 0.07927977293729782,
+                    "mae_ratio": 101391287289249.11
+                  }
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": {
+              "32": 1.3672396297819194,
+              "128": 14.307263899272462,
+              "256": 221569.3232650132,
+              "512": 25347821917776.34
+            }
+          },
+          "normalization_statistics": {
+            "GRA29_C20_45deg_particle1": {
+              "particle": 1,
+              "test_record_mu": 10524.1103515625,
+              "test_record_std": 8806.4736328125,
+              "paired_25deg_training_mu": 10308.583984375,
+              "paired_25deg_training_std": 8579.6923828125
+            },
+            "GRA29_C20_45deg_particle2": {
+              "particle": 2,
+              "test_record_mu": 9801.4755859375,
+              "test_record_std": 8395.2353515625,
+              "paired_25deg_training_mu": 8159.33984375,
+              "paired_25deg_training_std": 7649.083984375
+            },
+            "GRA29_C20_45deg_particle3": {
+              "particle": 3,
+              "test_record_mu": 8029.84375,
+              "test_record_std": 6557.9931640625,
+              "paired_25deg_training_mu": 7850.4208984375,
+              "paired_25deg_training_std": 6440.0224609375
+            },
+            "GRA29_C20_45deg_particle4": {
+              "particle": 4,
+              "test_record_mu": 7886.98193359375,
+              "test_record_std": 6037.22314453125,
+              "paired_25deg_training_mu": 8316.0869140625,
+              "paired_25deg_training_std": 6331.30029296875
+            }
+          }
+        }
+      }
+    },
+    {
+      "payload": {
+        "payload_id": 20,
+        "model_family": "predrnnpp",
+        "input_mode": "image_only",
+        "target_mode": "delta",
+        "tag": "fresh_predrnnpp_image_delta_s1337",
+        "seed": 1337,
+        "context_len": 4,
+        "rollout_steps": 512,
+        "report_horizons": [
+          32,
+          128,
+          256,
+          512
+        ],
+        "anchor_rule": "first_current_sign_change_minus_context"
+      },
+      "checkpoint": "/workspace/gra29_v5/results/v5_matched_grid/fresh_predrnnpp_image_delta_s1337/models/predrnnpp_best.pt",
+      "archived_reproduction": {
+        "next_frame_rtol": 1e-05,
+        "rollout_rtol": 0.01,
+        "strict_atol": 1e-05,
+        "divergent_ratio_threshold": 1000.0,
+        "divergent_log10_tolerance": 0.05,
+        "next_frame_summary": {
+          "all_reproduced": true,
+          "comparison_count": 4,
+          "strict_count": 4,
+          "divergent_order_count": 0,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "max_log10_difference_for_divergent_pairs": null
+        },
+        "rollout_summary": {
+          "all_reproduced": true,
+          "comparison_count": 16,
+          "strict_count": 16,
+          "divergent_order_count": 0,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "max_log10_difference_for_divergent_pairs": null
+        },
+        "next_frame_comparisons": [
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          }
+        ],
+        "rollout_comparisons": [
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle1",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle2",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle3",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 32,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 128,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 256,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          },
+          {
+            "stem": "GRA29_C20_45deg_particle4",
+            "horizon": 512,
+            "reproduced": true,
+            "strictly_close": true,
+            "criterion": "strict",
+            "absolute_difference": 0.0,
+            "relative_difference": 0.0,
+            "log10_difference": null
+          }
+        ]
+      },
+      "modes": {
+        "archived_test_record": {
+          "next_frame": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "N": 3000,
+                "model_mae": 0.008253377862274647,
+                "naive_mae": 0.010227324441075325,
+                "mae_ratio": 0.8069928660058101,
+                "model_mse": 0.0003615155292209238,
+                "naive_mse": 0.0004591176984831691,
+                "mse_ratio": 0.7874136205493648,
+                "model_rmse": 0.019013561718439913,
+                "naive_rmse": 0.021427031956926957,
+                "rmse_ratio": 0.8873632968234402,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.009079363197088242,
+                  "naive_mae": 0.011094273068010807,
+                  "mae_ratio": 0.8183828847036089,
+                  "model_rmse": 0.013053619252561622,
+                  "naive_rmse": 0.015470058311028313,
+                  "rmse_ratio": 0.843798968957728
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.008250338956713676,
+                  "naive_mae": 0.010224134661257267,
+                  "mae_ratio": 0.8069474072927681,
+                  "model_rmse": 0.019032048034505936,
+                  "naive_rmse": 0.021445898259089605,
+                  "rmse_ratio": 0.8874446667879445
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "N": 3000,
+                "model_mae": 0.008846673183143139,
+                "naive_mae": 0.010762064717710018,
+                "mae_ratio": 0.8220237858805182,
+                "model_mse": 0.0007114632171578705,
+                "naive_mse": 0.0007941486546769738,
+                "mse_ratio": 0.8958816626683876,
+                "model_rmse": 0.026673267838003473,
+                "naive_rmse": 0.02818064326229928,
+                "rmse_ratio": 0.9465102549198225,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.009810558520257473,
+                  "naive_mae": 0.011921069584786892,
+                  "mae_ratio": 0.8229595885236042,
+                  "model_rmse": 0.013620109886696178,
+                  "naive_rmse": 0.01640675794433885,
+                  "rmse_ratio": 0.8301524245620869
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.008843125775456429,
+                  "naive_mae": 0.010757800191640854,
+                  "mae_ratio": 0.8220198942092095,
+                  "model_rmse": 0.026709526325006703,
+                  "naive_rmse": 0.028214899732990222,
+                  "rmse_ratio": 0.9466461542578738
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "N": 3000,
+                "model_mae": 0.010328852571547031,
+                "naive_mae": 0.012910758145153522,
+                "mae_ratio": 0.8000190581700507,
+                "model_mse": 0.0012552415719255805,
+                "naive_mse": 0.0013965985272079706,
+                "mse_ratio": 0.898784831482684,
+                "model_rmse": 0.03542938853445795,
+                "naive_rmse": 0.03737109213293038,
+                "rmse_ratio": 0.9480426316799703,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.010706865228712559,
+                  "naive_mae": 0.013326705433428288,
+                  "mae_ratio": 0.8034142633524258,
+                  "model_rmse": 0.015080929337720221,
+                  "naive_rmse": 0.018422871027758497,
+                  "rmse_ratio": 0.8185982149577644
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.010327461175620556,
+                  "naive_mae": 0.01290922798216343,
+                  "mae_ratio": 0.8000061033773609,
+                  "model_rmse": 0.03548272850482414,
+                  "naive_rmse": 0.037423109534930776,
+                  "rmse_ratio": 0.9481501923752359
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "N": 3000,
+                "model_mae": 0.012075070291757584,
+                "naive_mae": 0.014783921651542187,
+                "mae_ratio": 0.8167704467304161,
+                "model_mse": 0.0014635588740929961,
+                "naive_mse": 0.0016185409622266889,
+                "mse_ratio": 0.9042458042455237,
+                "model_rmse": 0.038256487999984996,
+                "naive_rmse": 0.04023109446965977,
+                "rmse_ratio": 0.9509184004137913,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.014060216955840588,
+                  "naive_mae": 0.01583205536007881,
+                  "mae_ratio": 0.8880853834868473,
+                  "model_rmse": 0.01999121064204777,
+                  "naive_rmse": 0.021758564386226083,
+                  "rmse_ratio": 0.918774340401929
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.012067767791450024,
+                  "naive_mae": 0.014780061319470406,
+                  "mae_ratio": 0.8164896972079972,
+                  "model_rmse": 0.03830762679430823,
+                  "naive_rmse": 0.04028343576306301,
+                  "rmse_ratio": 0.9509523224290999
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": 0.8114515391966988
+          },
+          "rollout_anchored": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.01888989470899105,
+                    "naive_mae": 0.012904096394777298,
+                    "mae_ratio": 1.463868071896642
+                  },
+                  "128": {
+                    "model_mae": 0.0975949615240097,
+                    "naive_mae": 0.01444169320166111,
+                    "mae_ratio": 6.757861433642986
+                  },
+                  "256": {
+                    "model_mae": 0.2970637083053589,
+                    "naive_mae": 0.01854320988059044,
+                    "mae_ratio": 16.020080138137335
+                  },
+                  "512": {
+                    "model_mae": 0.7667104601860046,
+                    "naive_mae": 0.03644685074687004,
+                    "mae_ratio": 21.036398055649506
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.024614529684185982,
+                    "naive_mae": 0.020051302388310432,
+                    "mae_ratio": 1.227577601070733
+                  },
+                  "128": {
+                    "model_mae": 0.05118012800812721,
+                    "naive_mae": 0.019481854513287544,
+                    "mae_ratio": 2.62706653379533
+                  },
+                  "256": {
+                    "model_mae": 0.0890190526843071,
+                    "naive_mae": 0.02447611838579178,
+                    "mae_ratio": 3.636975899576546
+                  },
+                  "512": {
+                    "model_mae": 0.1671922355890274,
+                    "naive_mae": 0.03527527302503586,
+                    "mae_ratio": 4.739643984339011
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.01828562468290329,
+                    "naive_mae": 0.016494877636432648,
+                    "mae_ratio": 1.1085638272644942
+                  },
+                  "128": {
+                    "model_mae": 0.0371299646794796,
+                    "naive_mae": 0.01743387244641781,
+                    "mae_ratio": 2.129760028564899
+                  },
+                  "256": {
+                    "model_mae": 0.06670690327882767,
+                    "naive_mae": 0.02333155833184719,
+                    "mae_ratio": 2.8590847782239153
+                  },
+                  "512": {
+                    "model_mae": 0.1389324814081192,
+                    "naive_mae": 0.10287342220544815,
+                    "mae_ratio": 1.3505187095910705
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.026712791994214058,
+                    "naive_mae": 0.02483856864273548,
+                    "mae_ratio": 1.0754561737609116
+                  },
+                  "128": {
+                    "model_mae": 0.04605822637677193,
+                    "naive_mae": 0.03013666346669197,
+                    "mae_ratio": 1.528312065059126
+                  },
+                  "256": {
+                    "model_mae": 0.07423446327447891,
+                    "naive_mae": 0.03958681970834732,
+                    "mae_ratio": 1.8752318024381673
+                  },
+                  "512": {
+                    "model_mae": 0.14882169663906097,
+                    "naive_mae": 0.08314154297113419,
+                    "mae_ratio": 1.7899799705513066
+                  }
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": {
+              "32": 1.2188664184981952,
+              "128": 3.260750015265585,
+              "256": 6.097843154593991,
+              "512": 7.229135180032724
+            }
+          },
+          "normalization_statistics": {
+            "GRA29_C20_45deg_particle1": {
+              "particle": 1,
+              "test_record_mu": 10524.1103515625,
+              "test_record_std": 8806.4736328125,
+              "paired_25deg_training_mu": 10308.583984375,
+              "paired_25deg_training_std": 8579.6923828125
+            },
+            "GRA29_C20_45deg_particle2": {
+              "particle": 2,
+              "test_record_mu": 9801.4755859375,
+              "test_record_std": 8395.2353515625,
+              "paired_25deg_training_mu": 8159.33984375,
+              "paired_25deg_training_std": 7649.083984375
+            },
+            "GRA29_C20_45deg_particle3": {
+              "particle": 3,
+              "test_record_mu": 8029.84375,
+              "test_record_std": 6557.9931640625,
+              "paired_25deg_training_mu": 7850.4208984375,
+              "paired_25deg_training_std": 6440.0224609375
+            },
+            "GRA29_C20_45deg_particle4": {
+              "particle": 4,
+              "test_record_mu": 7886.98193359375,
+              "test_record_std": 6037.22314453125,
+              "paired_25deg_training_mu": 8316.0869140625,
+              "paired_25deg_training_std": 6331.30029296875
+            }
+          }
+        },
+        "paired_training_reference": {
+          "next_frame": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "N": 3000,
+                "model_mae": 0.00846907403320074,
+                "naive_mae": 0.010497660376131535,
+                "mae_ratio": 0.8067582422895698,
+                "model_mse": 0.0003804318548645824,
+                "naive_mse": 0.00048370930016972125,
+                "mse_ratio": 0.7864886094418664,
+                "model_rmse": 0.019504662387864663,
+                "naive_rmse": 0.021993392193332097,
+                "rmse_ratio": 0.8868419303584301,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.009321528486907482,
+                  "naive_mae": 0.011387521401047707,
+                  "mae_ratio": 0.8185739599180781,
+                  "model_rmse": 0.013405061132784479,
+                  "naive_rmse": 0.015878967763633806,
+                  "rmse_ratio": 0.844202301580642
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.008465937338769436,
+                  "naive_mae": 0.010494384914636612,
+                  "mae_ratio": 0.8067111514998766,
+                  "model_rmse": 0.01952359228217816,
+                  "naive_rmse": 0.022012758085554734,
+                  "rmse_ratio": 0.8869216754346644
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "N": 3000,
+                "model_mae": 0.009627419523894787,
+                "naive_mae": 0.01181186642497778,
+                "mae_ratio": 0.8150633589570835,
+                "model_mse": 0.0008320468477904797,
+                "naive_mse": 0.0009566404623910785,
+                "mse_ratio": 0.869759204739069,
+                "model_rmse": 0.028845222269736105,
+                "naive_rmse": 0.030929604950452865,
+                "rmse_ratio": 0.932608816567305,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.010760902427136898,
+                  "naive_mae": 0.013083945959806442,
+                  "mae_ratio": 0.8224508462656543,
+                  "model_rmse": 0.014929913697102438,
+                  "naive_rmse": 0.01800720076235621,
+                  "rmse_ratio": 0.8291079715350985
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.009623248130083084,
+                  "naive_mae": 0.011807181872427464,
+                  "mae_ratio": 0.8150334460889117,
+                  "model_rmse": 0.028884052399549446,
+                  "naive_rmse": 0.030967204899657663,
+                  "rmse_ratio": 0.9327303672753737
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "N": 3000,
+                "model_mae": 0.010515726171433926,
+                "naive_mae": 0.013147224672138691,
+                "mae_ratio": 0.7998438022983376,
+                "model_mse": 0.001296532922424376,
+                "naive_mse": 0.0014482334954664111,
+                "mse_ratio": 0.8952513020055657,
+                "model_rmse": 0.03600740093958985,
+                "naive_rmse": 0.03805566311952022,
+                "rmse_ratio": 0.9461772043362521,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.010904333554208279,
+                  "naive_mae": 0.013570829294621944,
+                  "mae_ratio": 0.8035126901588553,
+                  "model_rmse": 0.015363417018536106,
+                  "naive_rmse": 0.018760345288435346,
+                  "rmse_ratio": 0.8189303971929958
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.010514294728636742,
+                  "naive_mae": 0.01314566470682621,
+                  "mae_ratio": 0.7998298270285972,
+                  "model_rmse": 0.036061554959383325,
+                  "naive_rmse": 0.038108630938791306,
+                  "rmse_ratio": 0.9462831403548472
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "N": 3000,
+                "model_mae": 0.01154263410717249,
+                "naive_mae": 0.014097252860665321,
+                "mae_ratio": 0.8187860586213344,
+                "model_mse": 0.0013481591595336795,
+                "naive_mse": 0.001471676048822701,
+                "mse_ratio": 0.9160705989692287,
+                "model_rmse": 0.03671728693045933,
+                "naive_rmse": 0.038362430173578696,
+                "rmse_ratio": 0.9571157709332913,
+                "reversal_radius": 5,
+                "reversal_metrics": {
+                  "count": 11,
+                  "model_mae": 0.013267583213746548,
+                  "naive_mae": 0.015096687711775303,
+                  "mae_ratio": 0.8788406746599079,
+                  "model_rmse": 0.018833400314499725,
+                  "naive_rmse": 0.020747917848828814,
+                  "rmse_ratio": 0.9077248354134407
+                },
+                "nonreversal_metrics": {
+                  "count": 2989,
+                  "model_mae": 0.011536285281181335,
+                  "naive_mae": 0.014093573205173016,
+                  "mae_ratio": 0.818549356734243,
+                  "model_rmse": 0.03676703935205627,
+                  "naive_rmse": 0.03841233841782237,
+                  "rmse_ratio": 0.9571674328214622
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": 0.8101128655415814
+          },
+          "rollout_anchored": {
+            "particle_rows": [
+              {
+                "stem": "GRA29_C20_45deg_particle1",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.019130030646920204,
+                    "naive_mae": 0.013245181180536747,
+                    "mae_ratio": 1.4443011678112039
+                  },
+                  "128": {
+                    "model_mae": 0.09902876615524292,
+                    "naive_mae": 0.01482341531664133,
+                    "mae_ratio": 6.680563422119696
+                  },
+                  "256": {
+                    "model_mae": 0.3022826313972473,
+                    "naive_mae": 0.019033346325159073,
+                    "mae_ratio": 15.88173861984939
+                  },
+                  "512": {
+                    "model_mae": 0.7909626960754395,
+                    "naive_mae": 0.037410229444503784,
+                    "mae_ratio": 21.14295228391457
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle2",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.03132512792944908,
+                    "naive_mae": 0.02200726605951786,
+                    "mae_ratio": 1.4233993375065943
+                  },
+                  "128": {
+                    "model_mae": 0.08718026429414749,
+                    "naive_mae": 0.021382272243499756,
+                    "mae_ratio": 4.077221695680656
+                  },
+                  "256": {
+                    "model_mae": 0.1544421911239624,
+                    "naive_mae": 0.0268637053668499,
+                    "mae_ratio": 5.749102330259538
+                  },
+                  "512": {
+                    "model_mae": 0.21722997725009918,
+                    "naive_mae": 0.038716305047273636,
+                    "mae_ratio": 5.610813763990536
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle3",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.01837502233684063,
+                    "naive_mae": 0.016797039657831192,
+                    "mae_ratio": 1.0939440943853307
+                  },
+                  "128": {
+                    "model_mae": 0.03673629090189934,
+                    "naive_mae": 0.01775323785841465,
+                    "mae_ratio": 2.069272726185389
+                  },
+                  "256": {
+                    "model_mae": 0.0653659775853157,
+                    "naive_mae": 0.02375895529985428,
+                    "mae_ratio": 2.7512143004754344
+                  },
+                  "512": {
+                    "model_mae": 0.1336231827735901,
+                    "naive_mae": 0.1047578677535057,
+                    "mae_ratio": 1.2755431705426097
+                  }
+                }
+              },
+              {
+                "stem": "GRA29_C20_45deg_particle4",
+                "anchor_frame": 2844,
+                "onset_frame": 2848,
+                "status": "complete",
+                "first_nonfinite_step": null,
+                "horizons": {
+                  "32": {
+                    "model_mae": 0.026941565796732903,
+                    "naive_mae": 0.023684868589043617,
+                    "mae_ratio": 1.1375011727612372
+                  },
+                  "128": {
+                    "model_mae": 0.05160858482122421,
+                    "naive_mae": 0.028736859560012817,
+                    "mae_ratio": 1.7959020439741187
+                  },
+                  "256": {
+                    "model_mae": 0.08513497561216354,
+                    "naive_mae": 0.03774811327457428,
+                    "mae_ratio": 2.2553438629608884
+                  },
+                  "512": {
+                    "model_mae": 0.15810883045196533,
+                    "naive_mae": 0.07927977293729782,
+                    "mae_ratio": 1.9943148749557245
+                  }
+                }
+              }
+            ],
+            "mean_particle_mae_ratio": {
+              "32": 1.2747864431160916,
+              "128": 3.655739971989965,
+              "256": 6.6593497783863125,
+              "512": 7.505906023350859
+            }
+          },
+          "normalization_statistics": {
+            "GRA29_C20_45deg_particle1": {
+              "particle": 1,
+              "test_record_mu": 10524.1103515625,
+              "test_record_std": 8806.4736328125,
+              "paired_25deg_training_mu": 10308.583984375,
+              "paired_25deg_training_std": 8579.6923828125
+            },
+            "GRA29_C20_45deg_particle2": {
+              "particle": 2,
+              "test_record_mu": 9801.4755859375,
+              "test_record_std": 8395.2353515625,
+              "paired_25deg_training_mu": 8159.33984375,
+              "paired_25deg_training_std": 7649.083984375
+            },
+            "GRA29_C20_45deg_particle3": {
+              "particle": 3,
+              "test_record_mu": 8029.84375,
+              "test_record_std": 6557.9931640625,
+              "paired_25deg_training_mu": 7850.4208984375,
+              "paired_25deg_training_std": 6440.0224609375
+            },
+            "GRA29_C20_45deg_particle4": {
+              "particle": 4,
+              "test_record_mu": 7886.98193359375,
+              "test_record_std": 6037.22314453125,
+              "paired_25deg_training_mu": 8316.0869140625,
+              "paired_25deg_training_std": 6331.30029296875
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+data/source_uncompressed/
+data_prep/arrays/
+results/reproduced/
+paper/figures/
+paper/tables/

@@ -1,0 +1,1190 @@
+{
+  "convlstm_multichannel_delta": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "predrnnpp_image_only_delta": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_image_only_delta": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_image_only_delta_anchored": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_image_only_delta_rft": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 4,
+          "coherence": 0.5
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_image_only_delta_rft_anchored": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_img_delta_lopo": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_img_delta_s2026": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "unet_multichannel_delta": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 8,
+          "coherence": 1.0
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 6,
+          "coherence": 0.75
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "emulator": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        },
+        "persistence": {
+          "n_particles": 8,
+          "n_sign_flips": 7,
+          "coherence": 0.875
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "walrus_native": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 4,
+          "n_sign_flips": 4,
+          "coherence": 1.0
+        },
+        "emulator": {
+          "n_particles": 4,
+          "n_sign_flips": 3,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 4,
+          "n_sign_flips": 3,
+          "coherence": 0.75
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 4,
+          "n_sign_flips": 2,
+          "coherence": 0.5
+        },
+        "emulator": {
+          "n_particles": 4,
+          "n_sign_flips": 2,
+          "coherence": 0.5
+        },
+        "persistence": {
+          "n_particles": 4,
+          "n_sign_flips": 2,
+          "coherence": 0.5
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 4,
+          "n_sign_flips": 3,
+          "coherence": 0.75
+        },
+        "emulator": {
+          "n_particles": 4,
+          "n_sign_flips": 3,
+          "coherence": 0.75
+        },
+        "persistence": {
+          "n_particles": 4,
+          "n_sign_flips": 3,
+          "coherence": 0.75
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  },
+  "walrus_native_corrected": {
+    "next_frame": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    },
+    "rollout": {
+      "mean": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "p95": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      },
+      "bright_frac90": {
+        "truth": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "emulator": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        },
+        "persistence": {
+          "n_particles": 0,
+          "n_sign_flips": 0,
+          "coherence": NaN
+        }
+      }
+    }
+  }
+}

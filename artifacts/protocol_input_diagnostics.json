@@ -1,0 +1,492 @@
+{
+  "description": "Protocol perturbations on exact stride-one four-frame input contexts used for next-frame evaluation",
+  "normalization": "model-facing per-movie normalized channels",
+  "protocol_unit": "one shared cell-level trace",
+  "particle_movies": 4,
+  "context_len": 4,
+  "max_eval_windows": 3000,
+  "delays_frames": [
+    0,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "seed": 2026,
+  "particles": [
+    {
+      "particle": 1,
+      "stem": "GRA29_C20_45deg_particle1",
+      "interventions": {
+        "delay_0": {
+          "voltage": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          },
+          "current": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          }
+        },
+        "delay_16": {
+          "voltage": {
+            "mean_abs_difference": 0.005305443132858878,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.02788368591541854,
+            "correlation": 0.9998900641673903
+          },
+          "current": {
+            "mean_abs_difference": 0.016,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.03627083241844204,
+            "correlation": 0.929562960781073
+          }
+        },
+        "delay_32": {
+          "voltage": {
+            "mean_abs_difference": 0.010568238506035414,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.05554322905780204,
+            "correlation": 0.9994684001967752
+          },
+          "current": {
+            "mean_abs_difference": 0.032,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.07254166483688408,
+            "correlation": 0.8548346594715239
+          }
+        },
+        "delay_64": {
+          "voltage": {
+            "mean_abs_difference": 0.02097383625380462,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.11023167111535276,
+            "correlation": 0.9973497937487887
+          },
+          "current": {
+            "mean_abs_difference": 0.064,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.14508332967376816,
+            "correlation": 0.688852868582248
+          }
+        },
+        "delay_128": {
+          "voltage": {
+            "mean_abs_difference": 0.041319953654989756,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.21716425582240453,
+            "correlation": 0.9875233589953705
+          },
+          "current": {
+            "mean_abs_difference": 0.128,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.2901666593475363,
+            "correlation": 0.23666818685603733
+          }
+        },
+        "delay_256": {
+          "voltage": {
+            "mean_abs_difference": 0.08059548483413528,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.42358369113362493,
+            "correlation": 0.9504647709811428
+          },
+          "current": {
+            "mean_abs_difference": 0.18766666666666668,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.4254266385746431,
+            "correlation": -0.06738462180804422
+          }
+        },
+        "delay_512": {
+          "voltage": {
+            "mean_abs_difference": 0.15764018566135202,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.8285056148101259,
+            "correlation": 0.8482484258250168
+          },
+          "current": {
+            "mean_abs_difference": 0.273,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.6188710781396674,
+            "correlation": -0.10292765323494192
+          }
+        },
+        "shuffle": {
+          "voltage": {
+            "mean_abs_difference": 0.21699273240522599,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 1.1404433229793938,
+            "correlation": -0.001186779556564556
+          },
+          "current": {
+            "mean_abs_difference": 0.9540885416666667,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 2.1628491004467136,
+            "correlation": 0.0050932229543929
+          }
+        }
+      }
+    },
+    {
+      "particle": 2,
+      "stem": "GRA29_C20_45deg_particle2",
+      "interventions": {
+        "delay_0": {
+          "voltage": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          },
+          "current": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          }
+        },
+        "delay_16": {
+          "voltage": {
+            "mean_abs_difference": 0.005305443132858878,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.02788368591541854,
+            "correlation": 0.9998900641673903
+          },
+          "current": {
+            "mean_abs_difference": 0.016,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.03627083241844204,
+            "correlation": 0.929562960781073
+          }
+        },
+        "delay_32": {
+          "voltage": {
+            "mean_abs_difference": 0.010568238506035414,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.05554322905780204,
+            "correlation": 0.9994684001967752
+          },
+          "current": {
+            "mean_abs_difference": 0.032,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.07254166483688408,
+            "correlation": 0.8548346594715239
+          }
+        },
+        "delay_64": {
+          "voltage": {
+            "mean_abs_difference": 0.02097383625380462,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.11023167111535276,
+            "correlation": 0.9973497937487887
+          },
+          "current": {
+            "mean_abs_difference": 0.064,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.14508332967376816,
+            "correlation": 0.688852868582248
+          }
+        },
+        "delay_128": {
+          "voltage": {
+            "mean_abs_difference": 0.041319953654989756,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.21716425582240453,
+            "correlation": 0.9875233589953705
+          },
+          "current": {
+            "mean_abs_difference": 0.128,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.2901666593475363,
+            "correlation": 0.23666818685603733
+          }
+        },
+        "delay_256": {
+          "voltage": {
+            "mean_abs_difference": 0.08059548483413528,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.42358369113362493,
+            "correlation": 0.9504647709811428
+          },
+          "current": {
+            "mean_abs_difference": 0.18766666666666668,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.4254266385746431,
+            "correlation": -0.06738462180804422
+          }
+        },
+        "delay_512": {
+          "voltage": {
+            "mean_abs_difference": 0.15764018566135202,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.8285056148101259,
+            "correlation": 0.8482484258250168
+          },
+          "current": {
+            "mean_abs_difference": 0.273,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.6188710781396674,
+            "correlation": -0.10292765323494192
+          }
+        },
+        "shuffle": {
+          "voltage": {
+            "mean_abs_difference": 0.21699273240522599,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 1.1404433229793938,
+            "correlation": -0.001186779556564556
+          },
+          "current": {
+            "mean_abs_difference": 0.9540885416666667,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 2.1628491004467136,
+            "correlation": 0.0050932229543929
+          }
+        }
+      }
+    },
+    {
+      "particle": 3,
+      "stem": "GRA29_C20_45deg_particle3",
+      "interventions": {
+        "delay_0": {
+          "voltage": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          },
+          "current": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          }
+        },
+        "delay_16": {
+          "voltage": {
+            "mean_abs_difference": 0.005305443132858878,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.02788368591541854,
+            "correlation": 0.9998900641673903
+          },
+          "current": {
+            "mean_abs_difference": 0.016,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.03627083241844204,
+            "correlation": 0.929562960781073
+          }
+        },
+        "delay_32": {
+          "voltage": {
+            "mean_abs_difference": 0.010568238506035414,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.05554322905780204,
+            "correlation": 0.9994684001967752
+          },
+          "current": {
+            "mean_abs_difference": 0.032,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.07254166483688408,
+            "correlation": 0.8548346594715239
+          }
+        },
+        "delay_64": {
+          "voltage": {
+            "mean_abs_difference": 0.02097383625380462,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.11023167111535276,
+            "correlation": 0.9973497937487887
+          },
+          "current": {
+            "mean_abs_difference": 0.064,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.14508332967376816,
+            "correlation": 0.688852868582248
+          }
+        },
+        "delay_128": {
+          "voltage": {
+            "mean_abs_difference": 0.041319953654989756,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.21716425582240453,
+            "correlation": 0.9875233589953705
+          },
+          "current": {
+            "mean_abs_difference": 0.128,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.2901666593475363,
+            "correlation": 0.23666818685603733
+          }
+        },
+        "delay_256": {
+          "voltage": {
+            "mean_abs_difference": 0.08059548483413528,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.42358369113362493,
+            "correlation": 0.9504647709811428
+          },
+          "current": {
+            "mean_abs_difference": 0.18766666666666668,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.4254266385746431,
+            "correlation": -0.06738462180804422
+          }
+        },
+        "delay_512": {
+          "voltage": {
+            "mean_abs_difference": 0.15764018566135202,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.8285056148101259,
+            "correlation": 0.8482484258250168
+          },
+          "current": {
+            "mean_abs_difference": 0.273,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.6188710781396674,
+            "correlation": -0.10292765323494192
+          }
+        },
+        "shuffle": {
+          "voltage": {
+            "mean_abs_difference": 0.21699273240522599,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 1.1404433229793938,
+            "correlation": -0.001186779556564556
+          },
+          "current": {
+            "mean_abs_difference": 0.9540885416666667,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 2.1628491004467136,
+            "correlation": 0.0050932229543929
+          }
+        }
+      }
+    },
+    {
+      "particle": 4,
+      "stem": "GRA29_C20_45deg_particle4",
+      "interventions": {
+        "delay_0": {
+          "voltage": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          },
+          "current": {
+            "mean_abs_difference": 0.0,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.0,
+            "correlation": 1.0
+          }
+        },
+        "delay_16": {
+          "voltage": {
+            "mean_abs_difference": 0.005305443132858878,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.02788368591541854,
+            "correlation": 0.9998900641673903
+          },
+          "current": {
+            "mean_abs_difference": 0.016,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.03627083241844204,
+            "correlation": 0.929562960781073
+          }
+        },
+        "delay_32": {
+          "voltage": {
+            "mean_abs_difference": 0.010568238506035414,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.05554322905780204,
+            "correlation": 0.9994684001967752
+          },
+          "current": {
+            "mean_abs_difference": 0.032,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.07254166483688408,
+            "correlation": 0.8548346594715239
+          }
+        },
+        "delay_64": {
+          "voltage": {
+            "mean_abs_difference": 0.02097383625380462,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.11023167111535276,
+            "correlation": 0.9973497937487887
+          },
+          "current": {
+            "mean_abs_difference": 0.064,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.14508332967376816,
+            "correlation": 0.688852868582248
+          }
+        },
+        "delay_128": {
+          "voltage": {
+            "mean_abs_difference": 0.041319953654989756,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.21716425582240453,
+            "correlation": 0.9875233589953705
+          },
+          "current": {
+            "mean_abs_difference": 0.128,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.2901666593475363,
+            "correlation": 0.23666818685603733
+          }
+        },
+        "delay_256": {
+          "voltage": {
+            "mean_abs_difference": 0.08059548483413528,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.42358369113362493,
+            "correlation": 0.9504647709811428
+          },
+          "current": {
+            "mean_abs_difference": 0.18766666666666668,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.4254266385746431,
+            "correlation": -0.06738462180804422
+          }
+        },
+        "delay_512": {
+          "voltage": {
+            "mean_abs_difference": 0.15764018566135202,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 0.8285056148101259,
+            "correlation": 0.8482484258250168
+          },
+          "current": {
+            "mean_abs_difference": 0.273,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 0.6188710781396674,
+            "correlation": -0.10292765323494192
+          }
+        },
+        "shuffle": {
+          "voltage": {
+            "mean_abs_difference": 0.21699273240522599,
+            "measured_sigma": 0.1902705097508355,
+            "difference_over_sigma": 1.1404433229793938,
+            "correlation": -0.001186779556564556
+          },
+          "current": {
+            "mean_abs_difference": 0.9540885416666667,
+            "measured_sigma": 0.4411258009028969,
+            "difference_over_sigma": 2.1628491004467136,
+            "correlation": 0.0050932229543929
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "During double-blind review, cite this artifact using the anonymous entry below."
+title: "Data and code for evaluating learned emulators of operando microscopy"
+type: dataset
+authors:
+  - family-names: "Authors"
+    given-names: "Anonymous"
+year: 2026
+license: CC-BY-4.0
+repository-code: "https://anonymous.4open.science/r/anonymous-review-artifact-2026-A03A/"

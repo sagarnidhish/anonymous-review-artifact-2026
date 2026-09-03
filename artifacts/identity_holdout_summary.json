@@ -1,0 +1,293 @@
+{
+  "aggregation_unit": "physical_particle",
+  "shared_cell_level_protocol": true,
+  "particle_count": 4,
+  "models": {
+    "unet": {
+      "same_temperature_unseen_particle": {
+        "next_frame_mean_mae_ratio": 0.9103059494414801,
+        "next_frame_particles_better_than_persistence": 3,
+        "rollout_mean_mae_ratio": 27.742455694051536,
+        "rollout_particles_better_than_persistence": 1
+      },
+      "cross_temperature_unseen_particle": {
+        "next_frame_mean_mae_ratio": 0.991960732894646,
+        "next_frame_particles_better_than_persistence": 3,
+        "rollout_mean_mae_ratio": 22.844301944424895,
+        "rollout_particles_better_than_persistence": 0
+      }
+    },
+    "predrnnpp": {
+      "same_temperature_unseen_particle": {
+        "next_frame_mean_mae_ratio": 0.8881688836404577,
+        "next_frame_particles_better_than_persistence": 3,
+        "rollout_mean_mae_ratio": 3.6481723593238247,
+        "rollout_particles_better_than_persistence": 0
+      },
+      "cross_temperature_unseen_particle": {
+        "next_frame_mean_mae_ratio": 0.9320772930814256,
+        "next_frame_particles_better_than_persistence": 3,
+        "rollout_mean_mae_ratio": 5.157969521500982,
+        "rollout_particles_better_than_persistence": 0
+      }
+    }
+  },
+  "per_particle": [
+    {
+      "model_family": "unet",
+      "heldout_particle": 1,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle1",
+      "mae_ratio": 1.2269629285402708
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 1,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle1",
+      "mae_ratio": 3.8965610674570907
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 1,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle1",
+      "mae_ratio": 1.4776247249298273
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 1,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle1",
+      "mae_ratio": 84.67754746505305
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 2,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle2",
+      "mae_ratio": 0.7905614055979844
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 2,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle2",
+      "mae_ratio": 3.0844272288237855
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 2,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle2",
+      "mae_ratio": 0.8284531301398187
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 2,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle2",
+      "mae_ratio": 3.856884457795493
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 3,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle3",
+      "mae_ratio": 0.8004910681225041
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 3,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle3",
+      "mae_ratio": 102.99601880311656
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 3,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle3",
+      "mae_ratio": 0.8129062888605306
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 3,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle3",
+      "mae_ratio": 1.3422073046506555
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 4,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle4",
+      "mae_ratio": 0.8232083955051612
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 4,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle4",
+      "mae_ratio": 0.9928156768087185
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 4,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle4",
+      "mae_ratio": 0.8488587876484078
+    },
+    {
+      "model_family": "unet",
+      "heldout_particle": 4,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle4",
+      "mae_ratio": 1.5005685502003796
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 1,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle1",
+      "mae_ratio": 1.1045019072147035
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 1,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle1",
+      "mae_ratio": 4.617474100153805
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 1,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle1",
+      "mae_ratio": 1.2196126364035413
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 1,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle1",
+      "mae_ratio": 6.536460572525496
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 2,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle2",
+      "mae_ratio": 0.8073511817959702
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 2,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle2",
+      "mae_ratio": 5.4857798936005215
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 2,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle2",
+      "mae_ratio": 0.8435771633929692
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 2,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle2",
+      "mae_ratio": 9.584303722102026
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 3,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle3",
+      "mae_ratio": 0.8062587695675437
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 3,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle3",
+      "mae_ratio": 2.8005050587015967
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 3,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle3",
+      "mae_ratio": 0.8172154677222214
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 3,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle3",
+      "mae_ratio": 2.4516053823650616
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 4,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_25deg_particle4",
+      "mae_ratio": 0.8345636759836134
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 4,
+      "evaluation_group": "same_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_25deg_particle4",
+      "mae_ratio": 1.6889303848393766
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 4,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "next_frame",
+      "stem": "GRA29_C20_45deg_particle4",
+      "mae_ratio": 0.8479039048069706
+    },
+    {
+      "model_family": "predrnnpp",
+      "heldout_particle": 4,
+      "evaluation_group": "cross_temperature_unseen_particle",
+      "mode": "rollout",
+      "stem": "GRA29_C20_45deg_particle4",
+      "mae_ratio": 2.0595084090113427
+    }
+  ]
+}
